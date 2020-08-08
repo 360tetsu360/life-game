@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="utf-8">
+    <title>tetsu360</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script src = "sketch.js"></script>
+    <script src = "player.js"></script>
+</header>
+<body>
+    <header style="font-size: 80px; text-align: center;">CELLULAR AUTOMATA</header>
+    <div style="font-size: 40px; text-align: center;">lifegame / by tetsu360</div>
+    <div id="canvas"></div>
+    <div id="entity" class="entity">
+        entity:0
+    </div>
+    <input type="button" value="start" id="start" class="button">
+    <input type="button" value="stop" id="stop" class="button">
+    <input type="button" value="restart" id="restart" class="button">
+    <input type="button" value="undo" id="undo" class="button">
+    <div style="list-style: none;">
+        <li id="fpse">fps</li>
+        <li>
+            <input type="range" id="fps" min="1" max="60" step="1" value="60">
+        </li>
+        <li id="size">size</li>
+        <li>
+            <input type="range" id="sizeValue" min="10" max="80" step="10" value="10">
+        </li>
+    </div>
+    <div>
+        <ul style="list-style: none;">
+            <li style="font-size: 40px;">What is Cellular Automata ?</li>
+            <li><a href="https://natureofcode.com/book/chapter-7-cellular-automata/" class="btn-square"> click here</a> </li>
+        </ul>
+    </div>
+    <div class="exemples" style="list-style: none;">
+        <h1>examples</h1>
+        <li>
+        <p style="font-size: 50px;">
+            glider
+        </p>
+        <p style="font-family: Impact;">This pattern moves nonstoply</p>
+            <img src="example.png">
+        </li>
+        <li>
+            <p style="font-size: 50px;">
+                glider gun
+            </p>
+            <p style="font-family: Impact;">This pattern keeps making gliders
+                <br>
+                <input type="button" value="import" id="gliderGun" class="button">
+            </p>
+            <img src="example2.png">
+        </li>
+        <li>
+            <p style="font-size: 50px;">
+                space ship
+                <br>
+                <input type="button" value="import" id="spaceShip" class="button"></p>
+            </p>
+            <img src="example3.png">
+        </li>
+    </div>
+    <footer >
+        <br>
+        
+         <a href="https://twitter.com/intent/follow?screen_name=360tetsu360" class="btn-social-long-twitter"> <i class="fa fa-twitter"></i> <span>twitter / tetsu</span></a>
+         <br>
+         <a href="https://discord.com/invite/pUSKJMa" class="btn-social-long-twitter"> <i class="fa fa-twitter"></i> <span>discord / tetsu360</span></a>
+        <br>
+    </footer>
+</body>
+</html>
